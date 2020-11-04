@@ -1,0 +1,8 @@
+{
+  "id": "payment-cards-extension",
+  "name": "payment-cards-extension",
+  "srcdoc": "./build/index.html",
+  "fieldTypes": [
+    "Object"
+  ]
+}
