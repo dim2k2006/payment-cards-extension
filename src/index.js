@@ -95,7 +95,7 @@ export class App extends React.Component {
                     id={item.id}
                     name={item.id}
                     labelText="Card number"
-                    value={item.link}
+                    value={item.number}
                     onChange={(event) => this.onChange(item.id, 'number', event.target.value)}
                   />
                 </div>
@@ -105,7 +105,7 @@ export class App extends React.Component {
                     id={item.id}
                     name={item.id}
                     labelText="Card holder name"
-                    value={item.text}
+                    value={item.name}
                     onChange={(event) => this.onChange(item.id, 'name', event.target.value)}
                   />
                 </div>
