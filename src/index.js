@@ -11,8 +11,8 @@ import './index.css';
 
 const genItem = () => ({
   id: uuidv4(),
-  link: '',
-  text: '',
+  number: '',
+  name: '',
 });
 
 export class App extends React.Component {
@@ -94,9 +94,9 @@ export class App extends React.Component {
                   <TextField
                     id={item.id}
                     name={item.id}
-                    labelText="Link"
+                    labelText="Card number"
                     value={item.link}
-                    onChange={(event) => this.onChange(item.id, 'link', event.target.value)}
+                    onChange={(event) => this.onChange(item.id, 'number', event.target.value)}
                   />
                 </div>
 
@@ -104,9 +104,9 @@ export class App extends React.Component {
                   <TextField
                     id={item.id}
                     name={item.id}
-                    labelText="Text"
+                    labelText="Card holder name"
                     value={item.text}
-                    onChange={(event) => this.onChange(item.id, 'text', event.target.value)}
+                    onChange={(event) => this.onChange(item.id, 'name', event.target.value)}
                   />
                 </div>
 
@@ -119,7 +119,7 @@ export class App extends React.Component {
         </div>
 
         <div className="App__footer">
-          <Button buttonType="primary" onClick={this.onAddItem}>Add donation method</Button>
+          <Button buttonType="primary" onClick={this.onAddItem}>Add payment card</Button>
         </div>
       </div>
     );
